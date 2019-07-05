@@ -6,22 +6,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 $(document).ready(function() {
-  $('#symptom-form').submit(function(event) {
+  $('#symptom-form').click(function(event) {
     event.preventDefault();
     let symptom = $('#symptom').val();
     console.log(symptom)
     $('#symptom').val('');
 
+    let doctorList = new DoctorList();
+    let promise = doctorList.apiKey(symptom);
 
-
-
-    let doctorService = new DoctorList();
-    console.log(doctorService)
-    let promise = doctorService.apiKey(symptom);
     promise.then(function(response) {
       let body = JSON.parse(response);
-      $('#doctor').text();
-
+      console.log(body);
+      $('#doctor').text( ${body.main.humidity});
+        // function(error) {
+        //   $('.showErrors').text('There was an error processing your request: ${error.message}');
+        // });
+    });
   });
 });
-});
+
+
+
+    // let doctorService = new DoctorList();
+    // console.log(doctorService)
+    // let promise = doctorService.apiKey(symptom);
+    // promise.then(function(response) {
+    //   let body = JSON.parse(response);
+
+// });
+// });
