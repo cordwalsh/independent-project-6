@@ -2,5 +2,18 @@ body {
   text-align: center;
 }
 .jumbotron {
+  background-image: url(https://images.unsplash.com/photo-1548101307-a757d5f06d27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-shadow: 2px 2px 8px;
+  color: white;
+  animation: animate-bg 25s infinite linear;
+}
+@keyframes animate-bg {
+ from { background-size: 100%; background-position: 0% 0%; }
+ 50% { background-size: 160%; background-position: 0% 30% }
+ to { background-size: 100%; background-position: 0% 0%; }
+}
+button {
   border-radius: 10px;
 }
