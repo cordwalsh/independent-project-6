@@ -1,5 +1,5 @@
 // backend logic goes here
-class DoctorList {
+export class DoctorList {
   apiKey(symptom) {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
