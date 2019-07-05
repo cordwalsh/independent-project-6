@@ -10,7 +10,7 @@ export class DoctorList {
         } else {
           reject(error(request.statusText));
         }
-      };
+      }
       request.open('GET', url, true);
       request.send();
     });
