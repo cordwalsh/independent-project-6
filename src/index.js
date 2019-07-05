@@ -18,7 +18,7 @@ $(document).ready(function() {
     promise.then(function(response) {
       let body = JSON.parse(response);
       console.log(body);
-      // $('#doctor').text( ${body.main.humidity});
+      $('#doctor').text( ${body});
         // function(error) {
         //   $('.showErrors').text('There was an error processing your request: ${error.message}');
         // });
