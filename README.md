@@ -5,30 +5,18 @@
 
 ## Description
 
-This site lets you enter your age and tells you how old you are on other planets.
+This site lets you enter your symptom and it suggests info on how to fix it, in your area.
 
 ## Setup/Installation Requirements
-clone this repository https://github.com/cordwalsh/project-5.git
-deploy this Project https://cordwalsh.github.io/project-5
-open and view in web browser
+clone this repository https://github.com/cordwalsh/independent-project-5.git
+deploy this Project https://cordwalsh.github.io/independent-project-6 open and view in web browser
 
 ## Specs
 
-The program returns a number value based on your age (earth years)
-- Input: "27"
-- Output: "27"
+The user inputs a symptom and the program returns a list of info for docotrs, etc. in the portland area.
 
-The program returns a number value based on your age (other planets, mercury)
-- Input: "100"
-- Output: "24"
-
-The user inputs a life expectancy and the program returns a number value based on how many years you have left to live on each planet.
-- Input: "27 (earth), 75"
-- Output: "48"
-
-The program returns a number value depending on user life expectancy input. If over life expectancy it will return number of years they have lived past.
-- Input: "80 (earth), 65"
-- Output: "15"
+- Input: ""
+- Output: ""
 
 ## Support and contact details
 
@@ -39,6 +27,6 @@ Github at https://github.com/cordwalsh
 
 
 
-HTML. CSS. Bootstrap. Javascript. Jquery. Karma. Jasmine.
+HTML. CSS. Bootstrap. Javascript. Jquery. Karma. Jasmine. API stuff
 
 Copyright (c) 2019 Cord Walsh
