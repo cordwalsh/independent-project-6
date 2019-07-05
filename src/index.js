@@ -19,9 +19,9 @@ $(document).ready(function() {
       let body = JSON.parse(response);
       console.log(body);
       $('#doctor').text( ${body});
-        // function(error) {
-        //   $('.showErrors').text('There was an error processing your request: ${error.message}');
-        // });
+        function(error) {
+          $('.showErrors').text('There was an error processing your request: ${error.message}');
+        });
     });
   });
 });
