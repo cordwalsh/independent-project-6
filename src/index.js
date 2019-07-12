@@ -18,21 +18,8 @@ $(document).ready(function() {
     promise.then(function(response) {
       let body = JSON.parse(response);
       console.log(body);
-      $('#doctor').text( ${body});
-        function(error) {
-          $('.showErrors').text('There was an error processing your request: ${error.message}');
-        });
+      body.data.forEach(function(doctor){ $('#doctor').append(`<li>${doctor.profile.bio}</li>`)
+        })
+      });
     });
   });
-});
-
-
-
-    // let doctorService = new DoctorList();
-    // console.log(doctorService)
-    // let promise = doctorService.apiKey(symptom);
-    // promise.then(function(response) {
-    //   let body = JSON.parse(response);
-
-// });
-// });
