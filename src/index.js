@@ -6,14 +6,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 $(document).ready(function() {
-  $('#symptom-form').click(function(event) {
+  $('#symptom-form').submit(function(event) {
     event.preventDefault();
     let symptom = $('#symptom').val();
+    let name = $('#name').val();
     console.log(symptom)
     $('#symptom').val('');
+    $('#name').val('');
 
     let doctorList = new DoctorList();
-    let promise = doctorList.apiKey(symptom);
+    let promise = doctorList.apiKey(symptom,name);
 
     promise.then(function(response) {
       let body = JSON.parse(response);

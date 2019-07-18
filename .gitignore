@@ -1,12 +1,4 @@
 node_modules/
 .DS_Store
-dist/
-
+build/
 .env
-
-api key goes here
-
-
-
-Add this as a user_key parameter to your API calls to authenticate.
-073a0ab9278f00a646eed43d0fd56f7d
