@@ -1,19 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap');
+
+
 body {
-  text-align: center;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff 0%, #fff5ee 100%);
 }
-.jumbotron {
-  background-image: url(https://images.unsplash.com/photo-1548101307-a757d5f06d27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  text-shadow: 2px 2px 8px;
+
+.heading {
+  width: 50vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f08080 0%, #ff99cc 100%);
+  margin: 0;
+  /* text-align: center; */
+}
+
+.header {
+  position: absolute;
+  top: 1%;
+  left: 1.5%;
+}
+
+.header > h1 {
   color: white;
-  animation: animate-bg 25s infinite linear;
+  font-size: 100px;
+  font-family: 'Frank Ruhl Libre', serif;
 }
-@keyframes animate-bg {
- from { background-size: 100%; background-position: 0% 0%; }
- 50% { background-size: 160%; background-position: 0% 30% }
- to { background-size: 100%; background-position: 0% 0%; }
+
+.header > h4 {
+  font-family: 'Frank Ruhl Libre', serif;
+  color: white;
 }
-button {
-  border-radius: 10px;
+
+#symptom-form {
+  position: absolute;
+  top: 30%;
+  left: 1.5%;
+  color: white;
+}
+
+#doctor {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 600px;
+  height: 90vh;
+  margin: 0;
+  overflow: scroll;
+}
+
+#symptom {
+  border-radius: 5px;
+}
+
+label {
+
+}
+
+.button {
+  border-radius: 5px;
+
+}
+
+
+
+li {
+  padding: 10px;
 }

@@ -9,10 +9,8 @@ $(document).ready(function() {
   $('#symptom-form').submit(function(event) {
     event.preventDefault();
     let symptom = $('#symptom').val();
-    let name = $('#name').val();
     console.log(symptom)
     $('#symptom').val('');
-    $('#name').val('');
 
     let doctorList = new DoctorList();
     let promise = doctorList.apiKey(symptom,name);
